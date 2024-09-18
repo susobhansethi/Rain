@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #79552b; /* Light background to contrast chocolates */
+  }
+  
+  .chocolate-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .chocolate {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url('chocolate.png'); /* Replace with your image */
+    /* background-image: url('toffee.png'); */
+    background-size: cover;
+    animation: fall linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  
